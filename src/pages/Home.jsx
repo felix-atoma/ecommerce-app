@@ -31,7 +31,7 @@ const HomePage = () => {
           Discover the best audio equipment from our collection. Shop headphones, speakers, and earphones.
         </p>
         <Link
-          to="/category/all" // Change this if you have a dedicated shop page route
+          to="/shop" // Change this if you have a dedicated shop page route
           className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
         >
           Shop Now
