@@ -308,7 +308,7 @@
       },
       "third": {
         "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
-        "tablet": "c/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+        "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
         "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
       }
     },
