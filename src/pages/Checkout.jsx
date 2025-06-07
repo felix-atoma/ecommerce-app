@@ -350,11 +350,11 @@ export default function Checkout() {
                   <div key={item.id} className="flex justify-between items-center">
                     <div className="flex items-center">
                       <img 
-                        src={item.image || '/placeholder-product.jpg'} 
+                        src={item.image || '/assets/placeholder-product.jpg'} 
                         alt={item.name} 
                         className="w-16 h-16 object-cover rounded mr-4"
                         onError={(e) => {
-                          e.target.src = '/placeholder-product.jpg';
+                          e.target.src = '/assets/placeholder-product.jpg';
                         }}
                       />
                       <div>

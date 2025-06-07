@@ -4,15 +4,19 @@ import { ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
-  const { cart = [] } = useCart(); // Destructure with default empty array
+  const { cart = [] } = useCart();
   const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
 
   return (
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-gray-900 hover:text-black">
-          Home
+        {/* Logo Only (No Text) */}
+        <Link to="/">
+          <img 
+            src="/logo.png" // Update this path to your logo
+            alt="Home"
+            className="h-8 w-auto" // Adjust height as needed
+          />
         </Link>
 
         {/* Navigation Right Section */}

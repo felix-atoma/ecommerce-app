@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Lock, Mail } from 'lucide-react'; // Using Lucide icons
-import { Button } from '../components/ui/Button' // Custom button component
+import { Button } from '../components/ui/Button'; // Custom button component
 import { Input } from '../components/ui/Input'; // Custom input component
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card'; // Custom card components
 
@@ -37,7 +37,7 @@ const Login = () => {
       setError('');
       setLoading(true);
       await login(formData.email, formData.password);
-      navigate('/');
+      navigate('/shop'); // Redirect to shop page on successful login
     } catch (err) {
       console.error('Login error:', err);
       setError(err.message || 'Failed to log in. Please try again.');
